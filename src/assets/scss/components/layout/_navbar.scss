@@ -1,0 +1,63 @@
+.offcanvas {
+    max-width: 75% !important;
+}
+
+.offcanvas-header {
+    justify-content: end !important;
+    margin-bottom: 50px;
+}
+
+.btn-close {
+    font-size: 30px;
+
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.navbar-toggler {
+    border: none !important;
+    outline: none;
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.offcanvas-body {
+    font-family: inter-regular;
+    font-size: 14px;
+    @media screen and ($sm-reverse) {
+        font-size: 18px;
+    }
+}
+
+.navbar-nav {
+    a {
+        display: inline-block;
+        position: relative;
+        &:hover {
+            color: $Soft-red !important;
+            font-weight: bold;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: $Soft-red;
+            transform-origin: bottom right;
+            transition: transform 0.45s ease-out;
+            @media screen and ($sm-reverse) {
+                width: 25%;
+            }
+        }
+        &:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+    }
+}

@@ -1,0 +1,54 @@
+.news-component {
+    height: 100%;
+    background-color: $Very-dark-blue;
+    padding: 20px;
+
+    h2 {
+        color: $Soft-orange;
+        font-family: inter-bold;
+    }
+
+    h5 {
+        color: $Off-white;
+        font-family: inter-bold;
+        font-size: 16px;
+        @media screen and ($xl) {
+            font-size: 20px;
+        }
+        @media screen and ($lg-reverse) {
+            font-size: 14px;
+        }
+        @media screen and ($md-reverse) {
+            font-size: 12px;
+        }
+        @media screen and ($sm-reverse) {
+            font-size: 20px;
+        }
+    }
+
+    p {
+        color: $Grayish-blue;
+        font-size: 12px;
+        @media screen and ($lg) {
+            line-height: 1.8;
+        }
+        @media screen and ($xl) {
+            line-height: 2;
+            font-size: 16px;
+        }
+        @media screen and ($sm-reverse) {
+            font-size: 16px;
+        }
+    }
+
+    hr {
+        margin: 25px;
+        color: $Grayish-blue;
+        @media screen and ($lg-reverse) {
+            margin: 10px;
+        }
+        @media screen and ($sm-reverse) {
+            margin: 25px;
+        }
+    }
+}

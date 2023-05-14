@@ -1,0 +1,67 @@
+.blogs {
+    .card {
+        border: none;
+        transition: box-shadow .3s;
+        &:hover {
+            box-shadow: 0 0 20px rgba(33, 33, 33, .2);
+            cursor: pointer;
+        }
+    }
+
+    .card-body {
+        padding: 0px 0px 0px 20px;
+    }
+
+    img {
+        height: 100px;
+        @media screen and ($xl) {
+            height: 150px;
+        }
+    }
+
+    p {
+        font-family: inter-regular;
+        color: $Dark-grayish-blue;
+        font-size: 12px;
+        line-height: 1.6;
+        @media screen and ($xl) {
+            font-size: 18px;
+        }
+        @media screen and ($lg-reverse) {
+            line-height: 1.2;
+        }
+        @media screen and ($sm-reverse) {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+    }
+
+    h2 {
+        font-family: inter-bold;
+        font-size: 24px;
+        color: $Grayish-blue;
+        @media screen and ($lg-reverse) {
+            font-size: 20px;
+            margin-bottom: 5px;
+
+        }
+        @media screen and ($sm-reverse) {
+            font-size: 24px;
+        }
+    }
+
+    h5 {
+        color: $Very-dark-blue;
+        font-family: inter-bold;
+        font-size: 12px;
+        @media screen and ($xl) {
+            font-size: 18px;
+        }
+        @media screen and ($lg-reverse) {
+            margin-bottom: 5px;
+        }
+        @media screen and ($sm-reverse) {
+            font-size: 18px;
+        }
+    }
+}
